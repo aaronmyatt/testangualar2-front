@@ -1,0 +1,32 @@
+
+<h2>Maps</h2>
+<i> TODO:
+  <dl>
+    <dt>Given</dt>
+    <dd>I am an authenticated user</dd>
+    <dd>OR I am an authenticated mapper</dd>
+    <dt>When</dt>
+    <dd>I visit the /maps page</dd>
+    <dt>Then</dt>
+    <dd>I will see the map</dd>
+  </dl>
+</i>
+
+<sebm-google-map
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [disableDefaultUI]="false"
+  (mapClick)="mapClicked($event)">
+
+  <sebm-google-map-marker
+    *ngFor="#m of markers; #i = index"
+    (markerClick)="clickedMarker(m.label, i)"
+    [latitude]="m.lat"
+    [longitude]="m.lng"
+    [label]="m.label"
+    [markerDraggable]="m.draggable"
+    (dragEnd)="markerDragEnd(m, $event)">
+  </sebm-google-map-marker>
+
+</sebm-google-map>

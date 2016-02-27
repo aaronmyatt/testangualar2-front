@@ -1,0 +1,68 @@
+{
+  "login": [
+    {
+      "id": 1,
+      "name": "user1",
+      "password": "secret1"
+    },
+    {
+      "id": 2,
+      "name": "user2",
+      "password": "moresecretive"
+    }
+  ],
+  "profile": [
+    {
+      "id": 1,
+      "username": "user1",
+      "email": "user1@email.com",
+      "latest_point_lat": 3.1333,
+      "latest_point_lng": 101.7,
+      "mapper": true
+    }
+  ],
+  "points": [
+    {
+      "id": 1,
+      "lat": 3.1333,
+      "lng": 101.7,
+      "note": "hownow"
+    },
+    {
+      "id": 1,
+      "lat": 3.1333,
+      "lng": 101.7,
+      "note": ""
+    },
+    {
+      "id": 1,
+      "lat": 51.673858,
+      "lng": 7.815982,
+      "note": "t"
+    },
+    {
+      "id": 2,
+      "lat": 3.1559262425205308,
+      "lng": 101.71382904052734,
+      "note": ""
+    },
+    {
+      "id": 3,
+      "lat": 3.154212230739569,
+      "lng": 101.71614646911621,
+      "note": ""
+    },
+    {
+      "id": 4,
+      "lat": 3.1552406381473204,
+      "lng": 101.71202659606934,
+      "note": ""
+    },
+    {
+      "id": 5,
+      "lat": 3.152841019280288,
+      "lng": 101.71520233154297,
+      "note": ""
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+<b>DIAGNOSTIC</b>{{diagnostic}}
+<div class="container" *ngFor="#point of model">
+    <h1>Points Form</h1>
+  <form (ngSubmit)="onSubmit(point)" #pointsForm="ngForm">
+      <div class="form-group">
+        <label for="lat">Lat</label>
+        <input type="text"
+               disabled
+               class="form-control"
+               placeholder="{{point.lat}}">
+      </div>
+      <div class="form-group">
+        <label for="lng">Long</label>
+        <input type="text"
+               disabled
+               class="form-control"
+               placeholder="{{point.lng}}">
+      </div>
+      <div class="form-group">
+        <label for="note">Note</label>
+        <input type="text"
+               class="form-control"
+               [(ngModel)]="point.note">
+      </div>
+
+     <button type="submit" class="btn btn-default" [disabled]="!pointsForm.form.valid">Submit</button>
+
+  </form>
+</div>

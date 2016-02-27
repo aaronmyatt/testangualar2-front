@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>Profile Form</h1>
+    <b>DIAGNOSTIC</b>{{diagnostic}}
+    <form>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text"
+               class="form-control"
+               [(ngModel)]="model.username">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text"
+               class="form-control"
+               [(ngModel)]="model.email">
+      </div>
+      <div class="form-group">
+        <label for="mapper">Mapper?</label>
+        <input type="text"
+               class="form-control"
+               [(ngModel)]="model.mapper">
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
